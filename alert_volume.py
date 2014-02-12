@@ -11,7 +11,7 @@ import dateutil.parser
 PD_PATH = "https://%s.pagerduty.com/api/v1/"
 WEEK = timedelta(days=7)
 TIMEWINDOW = timedelta(days=180)
-INDIE_ALERT_WINDOW = timedelta(minutes=0)
+INDIE_ALERT_WINDOW = timedelta(minutes=30)
 
 def run():
     parser = argparse.ArgumentParser(description='Graph alert volumes for a given escalation policy.')
